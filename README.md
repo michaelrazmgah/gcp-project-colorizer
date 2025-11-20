@@ -45,7 +45,8 @@ This extension does not collect, transmit, or store any user data on external se
 ## Permissions
 
 - **Storage**: Used to store project-to-color mappings locally
-- **Host permission (console.cloud.google.com)**: Required to read the project ID and apply banner colors
+
+The extension uses a content script that runs on GCP Console pages to read the project ID and apply banner colors. This is declared in the manifest and does not require additional host permissions.
 
 ## Development
 

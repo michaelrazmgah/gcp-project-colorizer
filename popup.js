@@ -63,13 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
         projectIdInput.value = '';
         colorPicker.value = '#ffffff';
         loadRules();
-        
-        // Notify content script of the change
-        chrome.tabs.query({ url: 'https://console.cloud.google.com/*' }, (tabs) => {
-          tabs.forEach(tab => {
-            chrome.tabs.sendMessage(tab.id, { action: 'updateColors' });
-          });
-        });
+        // Content script will automatically update via storage.onChanged listener
       });
     });
   }
@@ -82,13 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       chrome.storage.sync.set({ projectColors }, () => {
         loadRules();
-        
-        // Notify content script of the change
-        chrome.tabs.query({ url: 'https://console.cloud.google.com/*' }, (tabs) => {
-          tabs.forEach(tab => {
-            chrome.tabs.sendMessage(tab.id, { action: 'updateColors' });
-          });
-        });
+        // Content script will automatically update via storage.onChanged listener
       });
     });
   }

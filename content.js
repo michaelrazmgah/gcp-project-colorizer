@@ -21,14 +21,6 @@ function init() {
       applyColor();
     }
   });
-  
-  // Listen for messages from popup
-  chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    if (request.action === 'updateColors') {
-      loadColors();
-      applyColor();
-    }
-  });
 }
 
 // Load color rules from storage
