@@ -1,0 +1,33 @@
+# Build artifacts
+*.zip
+gcp-project-colorizer.zip
+
+# Original/large icon files (not needed in repo)
+original_icon_large*.png
+original_icon*.png
+
+# Temporary images
+image.png
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Node modules (if you add any build tools later)
+node_modules/
+
+# Environment files
+.env
+.env.local
+

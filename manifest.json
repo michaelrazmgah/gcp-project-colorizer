@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "GCP Project Colorizer",
+  "version": "1.0.0",
+  "description": "Change GCP Console banner background color based on the active project",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://console.cloud.google.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://console.cloud.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
+
