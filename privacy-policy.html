@@ -45,8 +45,8 @@
     <p>The extension requires the following permissions:</p>
     <ul>
         <li><strong>Storage:</strong> Used to store your project-to-color mappings locally on your device.</li>
-        <li><strong>Host permission (console.cloud.google.com):</strong> Required to read the active project ID from the GCP Console page and apply the configured banner color. No data is collected from these pages.</li>
     </ul>
+    <p>The extension uses a content script that runs on GCP Console pages (console.cloud.google.com) to read the active project ID and apply the configured banner color. This is done through the content script declaration in the extension manifest, which does not require additional host permissions. No data is collected from these pages.</p>
     
     <h2>No External Communication</h2>
     <p>This extension does not communicate with any external servers. All functionality operates entirely within your browser and on the GCP Console pages you visit.</p>
