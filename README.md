@@ -12,7 +12,7 @@ A Chrome extension that customizes the Google Cloud Platform Console banner back
 ## Installation
 
 ### From Chrome Web Store
-[Link will be added after publication]
+[GCP Project Colorizer](https://chromewebstore.google.com/detail/gcp-project-colorizer/pfdogcijcoieaoaehmfgoiolndpkonel)
 
 ### Manual Installation (Developer Mode)
 
